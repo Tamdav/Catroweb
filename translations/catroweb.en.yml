@@ -65,6 +65,8 @@ oauthInfo: 'You have just used an external account to log in. We created a rando
             %link_start% here %link_end% to go to your profile page'
 oauthHere: "here"
 statistics: "Statistics"
+convert: "Convert to catrobat"
+scratchproject: "This is a Scratch project"
 
 indexPage:
   recommendedSection:

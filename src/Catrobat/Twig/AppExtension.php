@@ -129,7 +129,13 @@ class AppExtension extends AbstractExtension
       new TwigFunction('getCommunityStats', [$this, 'getCommunityStats']),
       new TwigFunction('assetExists', [$this, 'assetExists']),
       new TwigFunction('isVersionSupportedByCatBlocks', [$this, 'isVersionSupportedByCatBlocks']),
+      new TwigFunction('isScratchProject', [$this, 'isScratchProject']),
     ];
+  }
+
+  public function isScratchProject():bool
+  {
+    return true; //TODO
   }
 
   public function isVersionSupportedByCatBlocks(string $version): bool

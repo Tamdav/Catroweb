@@ -1,0 +1,9 @@
+<button id="convert-project{{ suffix|default('') }}"
+        class="btn btn-primary btn-block"
+
+        onclick="program.convertScratchProject()">
+
+  <i class="material-icons text-left d-none" id="download-pb{{ suffix|default('') }}">
+  {% include 'Default/loadingSpinner.html.twig' with {'spinner_id': 'convert-project-progressbar' ~ suffix|default(), 'small': 'true'} only %}</i>
+  <span>{{ "convert"|trans({}, "catroweb") }}</span>
+</button>

@@ -457,4 +457,11 @@ const Program = function (projectId, csrfToken, userRole, myProgram, statusUrl, 
     buttonSpinner.removeClass('d-none')
     window.location.href = url
   }
+
+
+  self.convertScratchProject = function() {
+    window.location.reload();
+    return 0; //TODO
+  }
+
 }
